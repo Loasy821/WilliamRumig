@@ -1,31 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mini Game</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #game { display: flex; justify-content: center; align-items: center; height: 100vh; }
-        #message { margin-top: 20px; font-size: 24px; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project 3</title>
 </head>
 <body>
-    <div id="game">
-        <button id="startGame">Start Game</button>
-        <div id="message"></div>
+    <header>
+        <h1>Welcome to Project 3</h1>
+    </header>
+    <div class="source-code-container">
+        <!-- Game source code goes here -->
     </div>
-    <script>
-        const startButton = document.getElementById('startGame');
-        const messageDiv = document.getElementById('message');
-
-        startButton.addEventListener('click', () => {
-            const randomNumber = Math.floor(Math.random() * 10) + 1;
-            const userGuess = prompt('Guess a number between 1 and 10:');
-            if (parseInt(userGuess) === randomNumber) {
-                messageDiv.textContent = 'Congratulations! You guessed it right!';
-            } else {
-                messageDiv.textContent = `Sorry! The correct number was ${randomNumber}.`;
-            }
-        });
-    </script>
+    <footer>
+        <p>&copy; 2026 Loasy821. All rights reserved.</p>
+    </footer>
 </body>
 </html>
