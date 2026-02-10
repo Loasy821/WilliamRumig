@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Project 2 Source</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Game Source Code</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SECTION SPACING FIX -->
+  <style>
+    #source {
+      min-height: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Project 2</h1>
-    </header>
-    <main>
-        <h2>Security Warning</h2>
-        <p>The UnHash script is not publicly available.</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Project 2 Team. All rights reserved.</p>
-    </footer>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Project 1 Source Code</div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#source">Source</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Project 1 Source Code</h1>
+    <h2>Unhash + Hash bash script</h2>
+  </section>
+
+  <!-- SOURCE (CLOSE TO HERO) -->
+  <section id="source" class="about">
+    <h2>Source Code</h2>
+
+    <textarea
+      rows="10"
+      cols="50"
+      readonly
+      style="
+        background:#161b22;
+        color:#c9d1d9;
+        border:1px solid #30363d;
+        border-radius:8px;
+        padding:15px;
+        font-family:monospace;
+        resize:none;
+      "
+    >
+Legaly I cant share it with you, I dont want to get in trouble but I can give a quick explaintion on how it works.
+
+So it uses tools like john the ripper to crack the hash and and other tools to create the hash for a string given in the most common hashes like Sha256..
+
+This was created in 2025 so it may be outdated. Its also linux only.
+    </textarea>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 William Rumig</p>
+  </footer>
+
 </body>
 </html>
