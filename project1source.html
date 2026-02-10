@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>HTML Game Source Code</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Game Source Code</title>
+
+  <!-- Font used by your CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>HTML Game Source Code</h1>
-    </header>
-    <form>
-        <textarea rows="10" cols="30">
-            fallingblockgame.playcode.io
 
-            I lost the code so I cant share it with yall!
-        </textarea>
-    </form>
-    <footer>
-        <p>&copy; 2026 Your Name</p>
-    </footer>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">HTML Game</div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#source">Source</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>HTML Game Source Code</h1>
+    <h2>Read-only source display</h2>
+  </section>
+
+  <!-- SOURCE CODE DISPLAY -->
+  <section id="source" class="about">
+    <h2>Game Code</h2>
+
+    <!-- READ-ONLY TEXT BOX -->
+    <textarea
+      rows="10"
+      cols="50"
+      readonly
+      style="
+        background:#161b22;
+        color:#c9d1d9;
+        border:1px solid #30363d;
+        border-radius:8px;
+        padding:15px;
+        font-family:monospace;
+        resize:none;
+      "
+    >
+fallingblockgame.playcode.io
+
+I lost the code so I cant share it with yall!
+    </textarea>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Your Name</p>
+  </footer>
+
 </body>
 </html>
