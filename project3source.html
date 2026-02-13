@@ -8,13 +8,53 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Project 3</h1>
+        <h1>Welcome to cpp simple crackme</h1>
     </header>
     <div class="source-code-container">
-        <!-- Game source code goes here -->
+        #include <iostream>
+#include <string>
+
+int generateKey(const std::string& user) {
+    int firstChar = (int)user[0];     // ASCII of first char
+    int length = user.length();
+
+    int key = firstChar * 3;          // basic math
+    key += length * 7;
+    key ^= 0x55;                      // tiny obfuscation
+
+    return key;
+}
+
+int main() {
+    std::string username;
+    int inputKey;
+
+    std::cout << "Username: ";
+    std::cin >> username;
+
+    if (username.length() < 3) {
+        std::cout << "Username too short!\n";
+        return 0;
+    }
+
+    std::cout << "Key: ";
+    std::cin >> inputKey;
+
+    int realKey = generateKey(username);
+
+    if (inputKey == realKey) {
+        std::cout << "Access granted\n";
+    }
+    else {
+        std::cout << "Wrong key\n";
+    }
+
+    return 0;
+}
+
     </div>
     <footer>
-        <p>&copy; 2026 Loasy821. All rights reserved.</p>
+        <p>&copy; 2026 William Rumig All rights reserved.</p>
     </footer>
 </body>
 </html>
