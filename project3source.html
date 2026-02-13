@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Project 3</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Game Source Code</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SECTION SPACING FIX -->
+  <style>
+    #source {
+      min-height: auto;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to cpp simple crackme</h1>
-    </header>
-    <div class="source-code-container">
-        #include <iostream>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Project 1 Source Code</div>
+    <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Project 1 Source Code</h1>
+    <h2>Simple CPP crackme</h2>
+  </section>
+
+  <!-- SOURCE (CLOSE TO HERO) -->
+  <section id="source" class="about">
+    <h2>Source Code</h2>
+
+    <textarea
+      rows="10"
+      cols="50"
+      readonly
+      style="
+        background:#161b22;
+        color:#c9d1d9;
+        border:1px solid #30363d;
+        border-radius:8px;
+        padding:15px;
+        font-family:monospace;
+        resize:none;
+      "
+    >
+#include <iostream>
 #include <string>
 
 int generateKey(const std::string& user) {
@@ -52,9 +93,13 @@ int main() {
     return 0;
 }
 
-    </div>
-    <footer>
-        <p>&copy; 2026 William Rumig All rights reserved.</p>
-    </footer>
+    </textarea>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 William Rumig</p>
+  </footer>
+
 </body>
 </html>
